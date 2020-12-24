@@ -1,0 +1,1208 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*
+@font-face {
+    src: url(../font/Bill.ttf);
+    font-family: "signature";
+}
+*/
+
+body {
+    overflow-x: hidden;
+}
+
+/*end of common css*/
+
+/*start of navbar*/
+.nav-full {
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(254, 198, 0, 0.2);
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.4s linear;
+}
+
+.nav-full ul li .nav-link {
+    color: #fff !important;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 15px;
+    position: relative;
+    transition: all 0.4s linear;
+}
+
+.nav-full ul li .nav-link:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: transparent;
+    bottom: -42px;
+    left: 0;
+    transition: all 0.4s linear;
+}
+
+.sticky.nav-full ul li .nav-link:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: transparent;
+    bottom: -14px;
+    left: 0;
+    transition: all 0.4s linear;
+}
+
+.nav-full ul li .nav-link:hover,
+.nav-full ul li .nav-link:hover:before {
+    color: #fec600 !important;
+}
+
+.nav-full ul li .nav-link:hover:before {
+    background-color: #fec600;
+}
+
+.nav-full .navbar-nav .active {
+    color: #fec600;
+}
+
+.nav-full .navbar-nav .active .nav-link:before {
+    background-color: #fec600;
+}
+
+.navbar-toggler {
+    background: #f1f1f1;
+}
+
+.navbar-light .navbar-toggler {
+    margin: 0 15px;
+}
+
+.navbar-nav .dropdown-menu {
+    background: #444;
+}
+
+.dropdown-item {
+    color: #fec600;
+}
+
+/*bannar part start*/
+#bannar-full .slider1 {
+    background: url(../image/banner5.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 250px 0 180px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#bannar-full .slider2 {
+    background: url(../image/banner6.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 250px 0 180px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#bannar-full .slider3 {
+    background: url(../image/banner7.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 250px 0 180px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.slider1:before,
+.slider2:before,
+.slider3:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.71);
+    z-index: -1;
+}
+
+.bannar-txt {
+    width: 50%;
+}
+
+.bannar-txt h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.bannar-txt h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    color: #fec600;
+    text-transform: uppercase;
+}
+
+.bannar-txt p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #f1f1f1;
+    padding: 30px 0 60px 0;
+}
+
+.bannar-txt a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: 20px 32px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    margin: 0 20px;
+    transition: all 0.5s linear;
+}
+
+.bannar-txt a .active {
+    padding: 20px 28px;
+    background: #fec600;
+    border-color: #fec600;
+    color: black;
+}
+
+.bannar-txt a:hover {
+    background: #fec600;
+    border-color: #fec600;
+    color: black;
+}
+
+
+.fa-chevron-right {
+    position: absolute;
+    right: 50px;
+    top: 45%;
+    color: white;
+    font-size: 40px;
+    z-index: 35;
+    transition: all 0.3s linear;
+}
+
+.fa-chevron-left {
+    position: absolute;
+    left: 50px;
+    top: 45%;
+    color: white;
+    font-size: 40px;
+    z-index: 33;
+    transition: all 0.3s linear;
+}
+
+.fa-chevron-left:hover,
+.fa-chevron-right:hover {
+    color: #fec600;
+
+}
+
+/* availablity Part Start */
+
+#av-full {
+    padding: 40px 0;
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-control {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fec600;
+}
+
+.form-control:focus {
+    border-color: #fec600;
+    box-shadow: none;
+}
+
+.ui-datepicker-header {
+    background-color: #444;
+}
+
+.ui-datepicker-title {
+    color: #fec600;
+}
+
+.font h3 {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.font span {
+    display: block;
+    color: #fec600;
+    padding-top: 5px;
+}
+
+.av-btn {
+    margin-top: 28px;
+}
+
+.btn-warning {
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-warning:focus {
+    border-color: #fec600;
+    box-shadow: none;
+}
+
+/* availablity Part End */
+
+
+/* Popular Room part  Start */
+
+#popular-rooms {
+    padding: 50px 0;
+    background: #f8f8f8;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-top h3 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #fec600;
+    text-transform: uppercase;
+}
+
+.card-txt h5 {
+    font-size: 22px;
+    color: #2a2b2c;
+    font-weight: 600;
+    line-height: 10px;
+}
+
+.card-txt h3 {
+    font-size: 22px;
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.card-txt span {
+    font-size: 15px;
+    color: #444;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.card-txt p {
+    color: #313233;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.card-list ul {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card-list ul i {
+    color: #fec600;
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.5);
+}
+
+.bt {
+    margin: 15px 0;
+}
+
+.btn1 a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+    text-align: center;
+    padding: 8px 25px;
+    border: 1px solid #fec600;
+    text-transform: uppercase;
+    transition: 0.8s;
+    z-index: 1;
+}
+
+.btn1 a:hover {
+    color: #ffffff;
+}
+
+.btn1 a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #fec600;
+    z-index: -1;
+    transition: 0.8s;
+
+}
+
+.btn2 a:before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn2 a:hover:before {
+    height: 100%;
+}
+
+
+/* Popular Room part  End */
+
+
+/* About us part start*/
+
+#about-full {
+    padding: 50px 0;
+    background: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+}
+
+.column1 i {
+    font-size: 30px;
+    color: #02918c;
+    transition: all 0.5s linear;
+}
+
+.column1 h4 {
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.column1 p {
+    line-height: 21px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #7e8287;
+    width: 80%;
+    margin: auto;
+}
+
+.column1:hover {
+    background-color: #fff;
+}
+
+.column1:hover i {
+    color: #fec600;
+    ;
+    transform: rotate(360deg);
+}
+
+/* About Us Part End */
+
+/* Services Part Start */
+
+#service-full {
+    background: url(../image/aboutuss.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+#service-full:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.71);
+    z-index: -1;
+}
+
+#service-full .column1 p {
+    width: 80%;
+    margin-left: 0;
+}
+
+#service-full .section-top p {
+    color: #fff;
+}
+
+#service-full .column1 i,
+#service-full .column1 p,
+#service-full .column1 h4 {
+    color: #f4f4f4;
+}
+
+#service-full .column1:hover {
+    background-color: transparent;
+}
+
+#service-full .column1:hover i,
+#service-full .column1:hover h4 {
+    color: #fec600;
+}
+
+/* Services Part End */
+
+
+/* Gallery/Protfolio Part Start */
+
+#portfolio-full {
+    padding: 70px 0;
+    background: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+}
+
+.venu-img {
+    position: relative;
+
+}
+
+.venu-img img {
+    height: 300px;
+    width: 270px;
+}
+
+.img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 0;
+    background: rgb(0, 0, 0, 0.5);
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s linear;
+}
+
+.img-overlay i {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    font-size: 20px;
+    color: #444;
+    ;
+    line-height: 40px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+
+.venu-img:hover .img-overlay {
+    height: 100%;
+}
+
+.venu-img:hover .img-overlay i {
+    opacity: 1;
+}
+
+/* Gallery/Protfolio Part End */
+
+
+/* Video part Start  */
+
+#video {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+}
+
+.video_bg {
+    background: url(../image/video-bg.jpg)top left no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    background-attachment: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.video_bg:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.71);
+    z-index: -1;
+}
+
+.video_bg i {
+    font-size: 50px;
+    color: #fec600;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.video_bg i:hover {
+    color: #fff;
+}
+
+.video_bg i {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-txt {
+    padding-top: 8%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.video-txt h3 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.video-txt h1 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #fec600;
+    text-transform: uppercase;
+}
+
+/* Video part end  */
+
+
+
+/*====== Slick Dots Start ==========*/
+
+.slick-dots {
+    text-align: center;
+    list-style: 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.slick-dots li button {
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #111;
+    background-color: transparent
+}
+
+.slick-dots li.slick-active button {
+    border-color: #fec600;
+    position: relative
+}
+
+.slick-dots li.slick-active button:before {
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    width: 4px;
+    height: 4px;
+    background-color: #fec600;
+}
+
+/*====== Slick Dots End ==========*/
+
+
+
+/*Feedback/ What Client Say part Start*/
+
+#feedfack_full {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+}
+
+.feedback_slide {
+    background-color: #444;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.feedback_slide:after {
+    content: "";
+    position: absolute;
+    border-top: 25px solid #444;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.feedk {
+    background-color: transparent;
+    width: 100%;
+    padding: 30px 50px 5px 50px;
+    position: relative;
+}
+
+.feedk p {
+    font-size: 14px;
+    font-weight: 400px;
+    color: #f1f1f1;
+}
+
+.feedk span {
+    padding: 5px;
+}
+
+.feedk span i {
+    color: #fec600;
+}
+
+.feedk h3 {
+    color: #fec600;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.feedk h4 {
+    font-size: 14px;
+    font-weight: 500px;
+    text-transform: capitalize;
+    color: #fec600;
+}
+
+.clients {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    opacity: .5;
+}
+
+.clients img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.clients_slider {
+    padding: 50px 0 0 0;
+}
+
+.slick-center .clients {
+    transform: scale(1.2);
+    /*    border: 1px solid #fec600;*/
+    border-radius: 50%;
+    opacity: 1;
+}
+
+#feedfack_full .clients_slider .slick-list {
+    padding: 10px 0px !important
+}
+
+
+/*Feedback/ What Client Say part End */
+
+
+/*counter plugin part css start */
+
+.main-counter-area {
+    background: url(../image/counter-bg.jpg) center center no-repeat;
+    overflow: hidden;
+    height: 250px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.main-counter-area:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.count-col {
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.count-col i {
+    font-size: 30px;
+    color: #fec600;
+}
+
+.count-col h1 {
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.count-col h3 {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.rotate {
+    margin-top: 50px;
+}
+
+/*counter plugin part css End */
+
+/* Footer Part Start */
+
+#footer-full {
+    position: relative;
+    background: #222222;
+    padding: 50px 0;
+}
+
+.footer-middle p {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 12px;
+}
+
+.footer-middle i {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: #fec600;
+    color: black;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+/* Footer Part End */
+
+/* Copyright start */
+
+#footer-bttom {
+    padding: 20px 0;
+    background-color: #070707;
+    font-family: 'Raleway', sans-serif;
+}
+
+#footer-bttom h5 {
+    font-size: 15px;
+    color: #fff;
+    float: left;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+#footer-bttom i {
+    font-size: 12px;
+    margin: 0 5px;
+    padding: 8px 8px;
+    border: 1px solid transparent;
+    float: right;
+    color: #fff;
+
+}
+
+#footer-bttom i:hover {
+    cursor: pointer;
+}
+
+/* Copyright End */
+
+/* Back To top withstickey */
+
+.back-to-top i {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: #fec600;
+    font-size: 40px;
+    z-index: 88;
+}
+
+.sticky {
+    padding: 10px 0;
+    background: #444 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s linear;
+}
+
+/* Back To top with stickey end */
+
+
+/*=============DropDown Room List Part Start===============*/
+
+#room-list {
+    padding: 200px 0;
+    background: #444;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fec600;
+    text-transform: uppercase;
+    margin: 0 10px;
+    border-color: #fff;
+}
+
+.btn-secondary:focus {
+    box-shadow: none;
+}
+
+.room-img {
+    position: relative;
+}
+
+.room-img img {
+    width: 293px;
+    height: 219px;
+}
+
+.room-img .img-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.room-img .overlay-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.overlay-txt a {
+    color: #fec600;
+}
+
+.overlay-txt a:hover {
+    color: #fff;
+}
+
+.room-img:hover .img-overlay {
+    opacity: 1;
+}
+
+/*=============DropDown Room view Part Start===============*/
+
+#room-view {
+    padding: 200px 0 50px 0;
+    background: #444;
+    font-family: 'Raleway', sans-serif;
+}
+
+.slide-img img {
+    height: 300px;
+    width: 320px;
+}
+
+.carousel-indicators li {
+    background-color: #fff;
+}
+
+.carousel-indicators li.active {
+    background-color: #fec600;
+}
+
+.custom-form {
+    border: 2px solid #f1f1f1;
+    padding: 20px 50px;
+}
+
+.lvl h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fec600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.lvl p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #f1f1f1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.block-button {
+    background: #444;
+    color: #fec600;
+    border: 1px solid #fec600;
+}
+.block-button:hover{
+    background: #1c1818;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
+
+.block-button:focus {
+    box-shadow: none;
+}
+
+/*=============Spa Part Start===============*/
+
+#spa-full {
+    padding: 200px 0 50px 0;
+    background-color: #444;
+
+}
+
+#spa-full .column1 p {
+    width: 80%;
+    margin-left: 0;
+}
+
+#spa-full .section-top p {
+    color: #fff;
+}
+
+#spa-full .column1 i {
+    color: #fec600;
+}
+
+#spa-full .column1 p,
+#spa-full .column1 h4 {
+    color: #f1f1f1;
+}
+
+#spa-full .column1:hover {
+    background-color: transparent;
+}
+
+#spa-full .column1:hover i {
+    color: #fff;
+}
+
+#spa-full .column1:hover h4 {
+    color: #fec600;
+}
+
+.spa-img {
+    margin-top: 15%;
+    overflow: hidden;
+    border: 2px solid #fec600;
+
+}
+
+.spa-img img {
+    height: 100%;
+    width: 100%;
+    -webkit-box-shadow: 0px 3px 24px -5px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 3px 24px -5px rgba(0, 0, 0, 1);
+    box-shadow: 0px 3px 24px -5px rgba(0, 0, 0, 1);
+    transition: 0.8s;
+    
+}
+.spa-img img:hover{
+    transform: scale(1.5);
+}
+
+/*pricing plan part start*/
+#price-full {
+    margin: 100x 0 !important;
+    font-family: 'Raleway', sans-serif;
+}
+
+#price-full:before {
+    content: "";
+    position: absolute;
+    top: -300px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    transform: skew(-85.8deg);
+    transform-origin: 300px;
+    transform-origin: right bottom;
+    z-index: 55;
+}
+
+.price-title {
+    padding: 20px 0 0 0
+}
+
+.price-row {
+    padding: 60px 0 100px 0;
+}
+
+.price-plan {
+    background: #f1f1f1;
+    position: relative;
+}
+
+.price-head {
+    background: #353535;
+    transition: all 0.4s linear;
+}
+
+.price-head h3 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 30px 0 94px 0;
+}
+
+.price-middle {
+    padding: 40px 0 0 0;
+}
+
+.price-middle p {
+    font-size: 14px;
+    color: #353535;
+}
+
+.price-bottom {
+    background: #353535;
+    transition: all 0.4s linear;
+}
+
+.price-bottom h3 {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 44px 0 26px 0;
+}
+
+.price-circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #353535;
+    position: absolute;
+    left: 50%;
+    top: 66px;
+    transform: translateX(-50%);
+    background: #fff;
+
+}
+
+.price {
+    background: #353535;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    top: 4%;
+    text-align: center;
+    transition: all 0.4s linear;
+}
+
+.price h1 {
+    font-size: 29px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.price p {
+    font-size: 12px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.price-plan:hover .price-head,
+.price-plan:hover .price-bottom,
+.price-plan:hover .price {
+    background: #fec600;
+
+
+}
+
+.price-plan:hover .price-circle {
+    border-color: #fec600;
+}
+
+.price-plan:hover {
+    box-shadow: 1px 1px 10px 1px #969191;
+}

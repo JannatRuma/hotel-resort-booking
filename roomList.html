@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Hotel Booking</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/venobox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--=======   navbar start =======-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent nav-full">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="index.html"><i class="fas fa-umbrella-beach text-white mr-3"></i>ABH RESORT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Room
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item border-bottom" href="#">Room List</a>
+                            <a class="dropdown-item" href="roomView.html">Room View</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="spa.html">Spa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ===========  navbar end ========== -->
+
+
+
+    <!-- ==========   Room List part start ==========-->
+
+    <section id="room-list">
+        <div class="container">
+            <div class="row">
+                <div class="section-top col-md-12">
+                    <h3 class="text-center">room list</h3>
+                    <p class="text-center text-white">Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. <span class="d-block">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</span></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="buttn col-md-12 col-sm-12 text-center mt-3">
+                    <button type="button" class="btn btn-secondary mb-2" data-filter="all">All</button>
+                    <button type="button" class="btn btn-secondary mb-2" data-filter=".one">Single Room</button>
+                    <button type="button" class="btn btn-secondary" data-filter=".two">Double Room</button>
+                    <button type="button" class="btn btn-secondary" data-filter=".three">Apartment</button>
+                </div>
+            </div>
+
+            <div class="row mt-5 filter-img">
+                <div class="col-md-3 col-sm-6 p-0 mix three">
+                    <div class="room-img ">
+                        <img src="image/gallery2.jpg" class="img-fluid" alt="">
+                        <div class="img-overlay text-white">
+                            <div class="overlay-txt room-overlay-txt">
+                                <h3>Apartment</h3>
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 p-0 mix one">
+                    <div class="room-img">
+                        <img src="image/gallery3.jpg" class="img-fluid" alt="">
+                        <div class="img-overlay text-white">
+                            <div class="overlay-txt room-overlay-txt">
+                                <h3>Single Room</h3>
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 p-0 mix two">
+                    <div class="room-img">
+                        <img src="image/gallery4.jpg" class="img-fluid" alt="">
+                        <div class="img-overlay text-white">
+                            <div class="overlay-txt room-overlay-txt">
+                                <h3>Double Room</h3>
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 p-0 mix one">
+                    <div class="room-img">
+                        <img src="image/gallery5.jpg" class="img-fluid" alt="">
+                        <div class="img-overlay text-white">
+                            <div class="overlay-txt room-overlay-txt">
+                                <h3>Single Room</h3>
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 p-0 mix two">
+                    <div class="room-img">
+                        <img src="image/gallery6.jpg" class="img-fluid" alt="">
+                        <div class="img-overlay text-white">
+                            <div class="overlay-txt room-overlay-txt">
+                                <h3>Double Room</h3>
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 p-0 mix one">
+                    <div class="room-img">
+                        <img src="image/gallery7.jpg" class="img-fluid" alt="">
+                        <div class="img-overlay text-white">
+                            <div class="overlay-txt room-overlay-txt">
+                                <h3>Single Room</h3>
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 p-0 mix three">
+                    <div class="room-img">
+                        <img src="image/gallery8.jpg" class="img-fluid" alt="">
+                        <div class="img-overlay text-white">
+                            <div class="overlay-txt room-overlay-txt">
+                                <h3>Apartment</h3>
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 p-0 mix three">
+                    <div class="room-img">
+                        <img src="image/gallery1.jpg" class="img-fluid" alt="">
+                        <div class="img-overlay text-white">
+                            <div class="overlay-txt room-overlay-txt">
+                                <h3>Apartment</h3>
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========  Room List part End ==========-->
+
+
+
+
+
+    <!-- ==========  footer part start   ==========-->
+
+    <footer id="footer-full">
+        <div class="container">
+            <div class="row footer-top">
+                <div class="section-top col-md-12 mb-5">
+                    <h3 class="text-center">Contact Us</h3>
+                    <p class="text-center text-white">Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed.</p>
+                </div>
+            </div>
+            <div class="row text-white footer-middle">
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12 col-sm-6 footer-border text-center border-right">
+                    <div class="col1">
+                        <i class="far fa-map-marker-alt"></i>
+                        <p>1234, Merul Badda </p>
+                        <p>Badda, Dhaka.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12 col-sm-6 footer-border text-center border-right">
+                    <div class="col1">
+                        <i class="fas fa-phone-alt"></i>
+
+                        <p>+123 4567 8900, +123 0098 7654 </p>
+                        <p>+99 0712 36526, +99 3644 36842</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12 col-sm-6 footer-border text-center border-right">
+                    <div class="col1">
+                        <i class="fas fa-envelope"></i>
+                        <p>abhimrann@gmail.com </p>
+                        <p>imukabbo@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12 col-sm-6 footer-border text-center">
+                    <div class="col1">
+                        <i class="fas fa-globe-asia"></i>
+                        <p>www.abheducation.com</p>
+                        <p>www.abhresturent.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========  copyright part start   ==========-->
+
+    <section id="footer-bttom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-6">
+                    <h5> &copy; 2019 abhimran</h5>
+                </div>
+
+                <div class="col-md-6 col-6">
+                    <i class="fab fa-facebook-f bg-primary"></i>
+                    <i class="fab fa-twitter bg-success"></i>
+                    <i class="fab fa-youtube bg-danger"></i>
+                    <i class="fab fa-pinterest-p bg-primary"></i>
+                    <i class="fab fa-google bg-info"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========  copyright part end  ==========-->
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-square-up"></i>
+    </div>
+
+    <!-- ==========  Back to top end part end  ==========-->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/fontawsome-kit.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/jquery.waypoints.js"></script>
+    <script src="js/jquery.rcounter.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

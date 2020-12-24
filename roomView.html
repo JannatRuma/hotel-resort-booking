@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Hotel Booking</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/venobox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--=======   navbar start =======-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent nav-full">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="index.html"><i class="fas fa-umbrella-beach text-white mr-3"></i>ABH RESORT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Room
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item border-bottom" href="roomList.html">Room List</a>
+                            <a class="dropdown-item" href="#">Room View</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="spa.html">Spa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ===========  navbar end ========== -->
+
+
+
+    <!-- ==========   Room view part start ==========-->
+
+    <section id="room-view">
+        <div class="container">
+            <div class="row">
+                <!--  Section-top -->
+                <div class="section-top col-md-12 mb-5">
+                    <h3 class="text-center">room detail</h3>
+                    <p class="text-center text-white">Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. <span class="d-block">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</span></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                         <!--  Slider-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active slide-img">
+                                <img class="d-block w-100" src="image/banner6.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item slide-img">
+                                <img class="d-block w-100" src="image/banner4.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item slide-img">
+                                <img class="d-block w-100" src="image/banner5.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
+                    <!--  Card text -->
+                    <div class="card-body card-txt">
+                        <h5 class="card-title text-white">Room Details</h5>
+                        <p class="card-text text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipasum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <div class="row card-list">
+                            <div class="col-md-6 ">
+                                <ul class="list-unstyled text-white">
+                                    <li><i class="fa fa-check-circle"></i>Free Wi-Fi</li>
+                                    <li><i class="fa fa-check-circle"></i>Incl. breakfast</li>
+                                    <li><i class="fa fa-check-circle"></i>Private balconyi</li>
+                                    <li><i class="fa fa-check-circle"></i>Sea view</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-6">
+                                <ul class="list-unstyled text-white">
+                                    <li><i class="fa fa-check-circle"></i>Private balconyi</li>
+                                    <li><i class="fa fa-check-circle"></i>Sea view</li>
+                                    <li><i class="fa fa-check-circle"></i>Free Wi-Fi</li>
+                                    <li><i class="fa fa-check-circle"></i>Incl. breakfast</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <form action="#" class="custom-form">
+                        <div class="lvl">
+                            <h2>Reserve Your Room</h2>
+                            <p>Book Now</p>
+                            <div class="border-bottom w-50 m-auto"></div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label class="text-white" for="email">Email</label>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label class="text-white" for="Check-in">Check-in</label>
+                            <input type="text" class="form-control" id="datepicker" placeholder="Check-in">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="text-white" for="Check-out">Check-out</label>
+                            <input type="text" class="form-control" id="datepicker2" placeholder="Check-out">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="text-white" for="inputZip">Children</label>
+                            <input type="number" name="quantity" min="1" max="5" class="form-control" id="Increment">
+                        </div>
+
+                        <button type="button" class="btn btn-warning btn-block block-button">Reserve Now</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========  Room view part End ==========-->
+
+    <!-- ==========  Other rooms part Start ==========-->
+
+    <section>
+        <div class="border-bottom"></div>
+    </section>
+
+    <section id="popular-rooms">
+        <div class="container">
+            <div class="row">
+               <!--  Section-top -->
+                <div class="section-top col-md-12">
+                    <h3 class="text-center">Find other Rooms</h3>
+                    <p class="text-center">Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. <span class="d-block">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</span></p>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-4 col-sm-12 col-lg-4 mb-sm-4">
+                    <div class="card shadow">
+                       <div class="inner">
+                           <img src="image/popular2.jpg" class="card-img-top" alt="News-img">
+                       </div>
+                        <!--  Card text -->
+                        <div class="card-body card-txt">
+                            <h5 class="card-title">Single Romm </h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipasum has been the industry's standard dummy text ever since the 1500s.</p>
+                            <div class="row card-list">
+                                <div class="col-md-6 ">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-circle"></i>Free Wi-Fi</li>
+                                        <li><i class="fa fa-check-circle"></i>Incl. breakfast</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-circle"></i>Private balconyi</li>
+                                        <li><i class="fa fa-check-circle"></i>Sea view</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3> $100.00<span> /PER NIGHT</span></h3>
+                            <div class="btn1 btn2 bt">
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-lg-4 mb-sm-4">
+                    <div class="card shadow">
+                       <div class="inner">
+                           <img src="image/popular3.jpg" class="card-img-top" alt="News-img">
+                       </div>
+                        <!--  Card text -->
+                        <div class="card-body card-txt">
+                            <h5 class="card-title">Double Bedroom </h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipasum has been the industry's standard dummy text ever since the 1500s.</p>
+
+                            <div class="row card-list">
+                                <div class="col-md-6 ">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-circle"></i>Free Wi-Fi</li>
+                                        <li><i class="fa fa-check-circle"></i>Incl. breakfast</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-circle"></i>Private balconyi</li>
+                                        <li><i class="fa fa-check-circle"></i>Sea view</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3> $150.00<span> /PER NIGHT</span></h3>
+                            <div class="btn1 btn2 bt">
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-lg-4 mb-sm-4">
+                    <div class="card shadow">
+                       <div class="inner">
+                           <img src="image/popular4.jpg" class="card-img-top" alt="News-img">
+                       </div>
+                        <!--  Card text -->
+                        <div class="card-body card-txt">
+                            <h5 class="card-title">Single Room</h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipasum has been the industry's standard dummy text ever since the 1500s.</p>
+                            <div class="row card-list">
+                                <div class="col-md-6 col-6 ">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-circle"></i>Free Wi-Fi</li>
+                                        <li><i class="fa fa-check-circle"></i>Incl. breakfast</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6 col-6">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-circle"></i>Private balconyi</li>
+                                        <li><i class="fa fa-check-circle"></i>Sea view</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3> $80.00<span> /PER NIGHT</span></h3>
+
+                            <div class="btn1 btn2 bt">
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========  Other rooms part End ==========-->
+
+
+
+
+
+
+    <!-- ==========  footer part start   ==========-->
+
+    <footer id="footer-full">
+        <div class="container">
+            <div class="row footer-top">
+                <div class="section-top col-md-12 mb-5">
+                    <h3 class="text-center">Contact Us</h3>
+                    <p class="text-center text-white">Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed.</p>
+                </div>
+            </div>
+            <div class="row text-white footer-middle">
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12 col-sm-6 footer-border text-center border-right">
+                    <div class="col1">
+                        <i class="far fa-map-marker-alt"></i>
+                        <p>1234, Merul Badda </p>
+                        <p>Badda, Dhaka.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12 col-sm-6 footer-border text-center border-right">
+                    <div class="col1">
+                        <i class="fas fa-phone-alt"></i>
+
+                        <p>+123 4567 8900, +123 0098 7654 </p>
+                        <p>+99 0712 36526, +99 3644 36842</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12 col-sm-6 footer-border text-center border-right">
+                    <div class="col1">
+                        <i class="fas fa-envelope"></i>
+                        <p>abhimrann@gmail.com </p>
+                        <p>imukabbo@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12 col-sm-6 footer-border text-center">
+                    <div class="col1">
+                        <i class="fas fa-globe-asia"></i>
+                        <p>www.abheducation.com</p>
+                        <p>www.abhresturent.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========  copyright part start   ==========-->
+
+    <section id="footer-bttom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-6">
+                    <h5> &copy; 2019 abhimran</h5>
+                </div>
+
+                <div class="col-md-6 col-6">
+                    <i class="fab fa-facebook-f bg-primary"></i>
+                    <i class="fab fa-twitter bg-success"></i>
+                    <i class="fab fa-youtube bg-danger"></i>
+                    <i class="fab fa-pinterest-p bg-primary"></i>
+                    <i class="fab fa-google bg-info"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========  copyright part end  ==========-->
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-square-up"></i>
+    </div>
+
+    <!-- ==========  Back to top end part end  ==========-->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/fontawsome-kit.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/jquery.waypoints.js"></script>
+    <script src="js/jquery.rcounter.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

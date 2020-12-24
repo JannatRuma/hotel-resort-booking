@@ -1,0 +1,615 @@
+@media (max-width:575px) {
+
+    .nav-full {
+        padding: 0 !important;
+    }
+
+    .nav-link {
+        background: #444;
+        text-align: center;
+    }
+
+    .bannar-txt h2 {
+        font-size: 19px
+    }
+
+    .bannar-txt h1 {
+        font-size: 40px;
+    }
+
+    .bannar-txt p {
+        padding: 25px 0;
+        font-size: 12px;
+    }
+
+    .bannar-txt {
+        width: 100% !important;
+    }
+
+    #bannar-full .slider1,
+    #bannar-full .slider2,
+    #bannar-full .slider3 {
+        padding: 150px 0 80px 0 !important;
+
+    }
+
+    .bannar-txt a {
+        padding: 10px;
+        margin: 0 4px;
+    }
+
+    .fa-chevron-right {
+        right: 10px;
+        top: 40%;
+        font-size: 20px;
+    }
+
+    .fa-chevron-left {
+        left: 10px;
+        top: 40%;
+        font-size: 20px;
+    }
+
+    .section-title p {
+        font-size: 13px;
+        padding: 20px 0;
+    }
+
+    /*-------    Check Availablity-------- */
+
+    #av-full {
+        padding: 20px 20px;
+    }
+
+    /*-------    Popular rooms-------- */
+
+    .section-top h3 {
+        font-weight: 600 !important;
+        font-size: 30px !important;
+    }
+
+    .section-top p {
+        font-size: 15px !important;
+    }
+
+    .card {
+        margin-bottom: 10px !important;
+    }
+
+
+
+    /*--------- About us -------*/
+
+    #about-full {
+        padding: 50px 0 !important;
+    }
+
+    .section-top h1 {
+        font-size: 30px !important;
+    }
+
+    .section-top p {
+        font-size: 12px !important;
+    }
+
+    /*--------- Our Service -------*/
+
+    #service-full {
+        padding: 50px 0 !important;
+    }
+
+    .section-top {
+        text-align: center !important;
+    }
+
+    .section-top p {
+        width: 100% !important;
+    }
+
+    .section-bottom {
+        text-align: center !important;
+    }
+
+    .column1 p {
+        margin: auto !important;
+    }
+
+    /*-----video-----*/
+
+    .video_bg {
+        height: 350px !important;
+    }
+
+    /*-----Protfolio-----*/
+
+    .venu-img img {
+        width: 100%;
+    }
+
+    /*---------    Room List ------ */
+
+    #room-list {
+        padding: 100px 0 30px 0 !important;
+    }
+
+    .room-img img {
+        width: 100%;
+    }
+
+    /*---------    Room view ------ */
+
+    #room-view {
+        padding: 100px 0 50px 0 !important;
+    }
+
+    /*---------    Spa ------ */
+
+    #spa-full {
+        padding: 100px 0 0 0 !important;
+    }
+
+    .spa-img {
+        margin-left: 5% !important;
+    }
+
+    .spa-img img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+
+    /* ------   counter part-------*/
+
+    .main-counter-area {
+        height: 400px !important;
+    }
+
+    /*------price part-----------*/
+
+    .price-col {
+        margin-bottom: 20px
+    }
+
+    .price {
+        left: 4%;
+    }
+
+    .price-title {
+        padding: 50px 0 0 0;
+    }
+
+    .price-row {
+        padding: 20px 0 50px 0;
+    }
+
+
+    /*------- nav item hover border------ */
+
+    .nav-full ul li .nav-link::before {
+        content: "";
+        width: 0% !important;
+    }
+
+    .navbar-nav .dropdown-menu {
+        width: 70%;
+        position: absolute;
+        left: 84px;
+    }
+
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .nav-full {
+        padding: 0 !important;
+    }
+
+    .nav-link {
+        background: #444;
+        text-align: center;
+    }
+
+    .bannar-txt h2 {
+        font-size: 30px
+    }
+
+    .bannar-txt h1 {
+        font-size: 50px;
+    }
+
+    .bannar-txt p {
+        padding: 20px;
+    }
+
+    .bannar-txt {
+        width: 100% !important;
+    }
+
+    #bannar-full .slider1,
+    #bannar-full .slider2,
+    #bannar-full .slider3 {
+        padding: 100px 0 !important;
+    }
+
+    .bannar-txt a {
+        padding: 10px;
+        margin: 0 4px;
+    }
+
+    .fa-chevron-right {
+        right: 10px;
+        top: 40%;
+        font-size: 20px;
+    }
+
+    .fa-chevron-left {
+        left: 10px;
+        top: 40%;
+        font-size: 20px;
+    }
+
+    .section-title p {
+        font-size: 13px;
+        padding: 20px 10px;
+    }
+
+    /*-------    Check Availablity-------- */
+
+    #av-full {
+        padding: 20px 20px;
+    }
+
+    /*-- about us----- */
+
+    #about-full {
+        padding: 60px 0 !important;
+    }
+
+    .section-top h1 {
+        font-size: 35px !important;
+    }
+
+    .section-top p {
+        font-size: 14px !important;
+    }
+
+    #about-full .section-bottom {
+        border-right-style: none !important;
+    }
+
+    .column1 p {
+        margin: auto !important;
+    }
+
+    /*-- our service----- */
+
+    #service-full {
+        padding: 70px 0 !important;
+    }
+
+    #service-full .section-top {
+        text-align: center !important;
+    }
+
+    #service-full .section-top p {
+        width: 100% !important;
+    }
+
+    #service-full .section-bottom {
+        text-align: center !important;
+    }
+
+    #service-full .column1 {
+        padding: 5px 0 !important;
+        margin-bottom: 5px !important;
+    }
+
+    /*--------- footer part--------*/
+
+    .footer-border {
+        border-right-style: none !important;
+    }
+
+    /* ------   counter part-------*/
+
+    .main-counter-area {
+        height: 400px !important;
+    }
+
+
+    /*price part*/
+
+    .price {
+        left: 4%;
+    }
+
+    .price-col {
+        margin-bottom: 20px
+    }
+
+    .price-title {
+        padding: 50px 0 0 0;
+    }
+
+    .price-row {
+        padding: 20px 0 50px 0;
+    }
+
+    /*-----video-----*/
+
+    .video_bg {
+        height: 350px !important;
+    }
+
+    /*---------    Room List ------ */
+
+    #room-list {
+        padding: 100px 0 30px 0 !important;
+    }
+
+    .room-img img {
+        width: 100%;
+    }
+
+    /*---------    Room view ------ */
+
+    #room-view {
+        padding: 100px 0 50px 0 !important;
+    }
+
+    /*---------    Spa ------ */
+
+    #spa-full {
+        padding: 100px 0 0 0 !important;
+    }
+
+    .spa-img img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    #spa-full .section-top {
+        text-align: center !important;
+    }
+
+    #spa-full .section-top p {
+        width: 100% !important;
+    }
+
+    #spa-full .section-bottom {
+        text-align: center !important;
+    }
+
+    #spa-full .column1 {
+        padding: 5px 0 !important;
+        margin-bottom: 5px !important;
+    }
+
+    .spa-img {
+        margin-left: 7% !important;
+    }
+
+
+    /* nav item hover border */
+    .nav-full ul li .nav-link::before {
+        content: "";
+        width: 0% !important;
+    }
+
+    .navbar-nav .dropdown-menu {
+        width: 70%;
+        position: absolute;
+        left: 84px;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:991px) {
+    .nav-link {
+        background: #444;
+        text-align: center;
+    }
+
+    .nav-full {
+        padding: 0 !important;
+    }
+
+    .bannar-txt {
+        width: 70% !important;
+    }
+
+    #bannar-full .slider1,
+    #bannar-full .slider2,
+    #bannar-full .slider3 {
+        padding: 150px 0 100px 0 !important;
+    }
+
+    .bannar-txt a {
+        padding: 10px;
+        margin: 0 4px;
+    }
+
+    .fa-chevron-right {
+        right: 15px;
+        top: 40%;
+        font-size: 30px;
+    }
+
+    .fa-chevron-left {
+        left: 15px;
+        top: 40%;
+        font-size: 30px;
+    }
+
+    /*-------    Check Availablity-------- */
+
+    #av-full {
+        padding: 20px 20px;
+    }
+
+    /*--------About ------*/
+
+    #about-full {
+        padding: 70px 0 !important;
+    }
+
+    .section-top h1 {
+        font-size: 38px !important;
+    }
+
+    .section-top p {
+        font-size: 16px !important;
+        width: 100% !important;
+    }
+
+    .section-bottom {
+        text-align: center !important;
+    }
+
+    .column1 {
+        padding: 5px 0 !important;
+        margin-bottom: 5px !important;
+    }
+
+    .column1 p {
+        margin: auto !important;
+    }
+
+
+    /*---- work full--------    */
+    #work-full {
+        padding: 70px 0 !important
+    }
+
+    .overlay-txt p {
+        font-size: 10px !important;
+        text-align: center !important;
+    }
+
+    .overlay-txt h4 {
+        font-size: 12px !important;
+        text-align: center !important;
+    }
+
+    /*--------    popular rooms------- */
+    .card {
+        width: 100% !important;
+        margin: 5px 0;
+    }
+
+    .card-txt h5 {
+        line-height: normal !important;
+        font-size: 13px !important;
+    }
+
+    .card-txt p {
+        font-size: 13px !important;
+    }
+    /*---------    Room List ------ */
+
+    #room-list {
+        padding: 100px 0 30px 0 !important;
+    }
+    
+    /*---------    Room view ------ */
+
+    #room-view {
+        padding: 100px 0 50px 0 !important;
+    }
+
+    /*-------price----*/
+
+    .price-head,
+    .price-bottom {
+        width: 210px;
+    }
+
+    .price-head h3 {
+        padding: 24px 0 70px 0;
+    }
+
+    .price {
+        left: 4%;
+    }
+
+    .footer-border {
+        border-right: none !important;
+    }
+
+    /*    Room */
+    .room-overlay-txt h3 {
+        font-size: 20px;
+
+    }
+
+    .room-overlay-txt a {
+        font-size: 12px;
+        color: orange !important;
+
+    }
+
+    /*---------    Spa ------ */
+
+    #spa-full {
+        padding: 100px 0 0 0 !important;
+    }
+
+    .spa-img img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    #spa-full .section-top {
+        text-align: center !important;
+    }
+
+    #spa-full .section-top p {
+        width: 100% !important;
+    }
+
+    #spa-full .section-bottom {
+        text-align: center !important;
+    }
+
+    #spa-full .column1 {
+        padding: 5px 0 !important;
+        margin-bottom: 5px !important;
+    }
+
+    /* nav item hover border */
+    .nav-full ul li .nav-link::before {
+        content: "";
+        width: 0% !important;
+    }
+
+    .navbar-nav .dropdown-menu {
+        width: 70%;
+        position: absolute;
+        left: 84px;
+    }
+
+}
+@media (min-width:992px) and (max-width:1199px) {
+
+
+    /*   Price Plan*/
+
+    .price {
+        left: 4%;
+    }
+
+    /*Footer*/
+
+    .footer-middle p {
+        font-size: 12px;
+    }
+
+    /*    Spa*/
+
+    .spa-img img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+}
+
+@media (min-width:1200px) {}

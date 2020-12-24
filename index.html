@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hotel Booking</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/venobox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--=======   navbar start =======-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent nav-full">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="#"><i class="fas fa-umbrella-beach text-white mr-3"></i>ABH RESORT</a>
+
+            <!--  Responsive Toggoler button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#bannar-full">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!--  Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Room
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item border-bottom" href="roomList.html">Room List</a>
+                            <a class="dropdown-item" href="roomView.html">Room View</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-full">About Us </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service-full">Our Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio-full">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spa.html">Spa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer-full">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ===========  navbar end ========== -->
+
+    <!-- ==========  bannar part start ==========-->
+
+    <section id="bannar-full">
+        <!-- Slider1-->
+        <div class="slider1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="bannar-txt m-auto text-center">
+                            <h2>A Five Star Hotel</h2>
+                            <h1>Enjoy With Us</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+
+                            <a href="roomList.html" class="active">see rooms</a>
+                            <a href="roomView.html">book now</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider2-->
+        <div class="slider2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="bannar-txt m-auto text-center">
+                            <h2>A Five Star Hotel</h2>
+                            <h1>Relux & Enjoy</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <a href="roomList.html" class="active">see rooms</a>
+                            <a href="roomView.html">book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider3-->
+        <div class="slider3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="bannar-txt m-auto text-center">
+                            <h2>A Five Star Hotel</h2>
+                            <h1>Stay with Us</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <a href="roomList.html" class="active">see rooms</a>
+                            <a href="roomView.html">book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========   bannar part end ==========-->
+
+    <!-- ==========   check availablity part start ==========-->
+
+    <section id="av-full">
+        <div class="row">
+            <!--  1st column -->
+            <div class="col-md-12 col-lg-3 col-12 font">
+                <h3>Check <span>Availablity</span></h3>
+            </div>
+
+            <!--  2nd column -->
+            <div class="col-md-12 col-lg-6 col-12 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-12 col-md-12 col-lg-4">
+                        <label for="Check-in">Check-in</label>
+                        <input type="text" class="form-control" id="datepicker" placeholder="Check-in">
+                    </div>
+
+                    <div class="form-group col-12 col-md-12 col-lg-4">
+                        <label for="Check-out">Check-out</label>
+                        <input type="text" class="form-control" id="datepicker2" placeholder="Check-out">
+                    </div>
+
+                    <div class="form-group col-12  col-md-12 col-lg-4">
+                        <label for="inputZip">Children</label>
+                        <input type="number" name="quantity" min="1" max="5" class="form-control" id="Increment">
+                    </div>
+                </div>
+            </div>
+
+            <!--  3rd column -->
+
+            <div class="col-md-12 col-12 col-lg-3 av-btn">
+                <div class="btn1 btn2">
+                    <a href="roomList.html">Check Availablity</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========   check availablity part End  ==========-->
+
+    <!-- ==========   Popular Rooms part start ==========-->
+
+    <section id="popular-rooms">
+        <div class="container">
+            <div class="row">
+                <!--  Popular Rooms top -->
+                <div class="section-top col-md-12">
+                    <h3 class="text-center">popular rooms</h3>
+                    <p class="text-center">Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. <span class="d-block">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</span></p>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <!--  1st card box-->
+                <div class="col-md-4 col-sm-12 col-12 col-lg-4 mb-sm-4">
+                    <div class="card shadow">
+                        <!--  Card Image-->
+                        <div class="inner">
+                            <img src="image/popular2.jpg" class="card-img-top" alt="News-img">
+                        </div>
+                        <!--  Card Text-->
+                        <div class="card-body card-txt">
+                            <h5 class="card-title">Single Romm </h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipasum has been the industry's standard dummy text ever since the 1500s.</p>
+                            <div class="row card-list">
+                                <div class="col-md-6 ">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-circle"></i>Free Wi-Fi</li>
+                                        <li><i class="fa fa-check-circle"></i>Incl. breakfast</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-circle"></i>Private balconyi</li>
+                                        <li><i class="fa fa-check-circle"></i>Sea view</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3> $100.00<span> /PER NIGHT</span></h3>
+                            <div class="btn1 btn2 bt">
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  2nd card box-->
+                <div class="col-md-4 col-sm-12 col-12 col-lg-4 mb-sm-4">
+                    <div class="card shadow">
+                        <!--  Card Image-->
+                        <div class="inner">
+                            <img src="image/popular3.jpg" class="card-img-top" alt="News-img">
+                        </div>
+                        <!--  Card Text-->
+                        <div class="card-body card-txt">
+                            <h5 class="card-title">Double Bedroom </h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipasum has been the industry's standard dummy text ever since the 1500s.</p>
+
+                            <div class="row card-list">
+                                <div class="col-md-6 ">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-circle"></i>Free Wi-Fi</li>
+                                        <li><i class="fa fa-check-circle"></i>Incl. breakfast</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-circle"></i>Private balconyi</li>
+                                        <li><i class="fa fa-check-circle"></i>Sea view</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h3> $150.00<span> /PER NIGHT</span></h3>
+                            <div class="btn1 btn2 bt">
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--  3rd card box-->
+                <div class="col-md-4 col-sm-12 col-12 col-lg-4 mb-sm-4">
+                    <div class="card shadow">
+                        <!--  Card Image-->
+                        <div class="inner">
+                            <img src="image/popular4.jpg" class="card-img-top" alt="News-img">
+                        </div>
+                        <!--  Card Text-->
+                        <div class="card-body card-txt">
+                            <h5 class="card-title">Single Room</h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipasum has been the industry's standard dummy text ever since the 1500s.</p>
+                            <div class="row card-list">
+                                <div class="col-md-6 ">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-circle"></i>Free Wi-Fi</li>
+                                        <li><i class="fa fa-check-circle"></i>Incl. breakfast</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-check-circle"></i>Private balconyi</li>
+                                        <li><i class="fa fa-check-circle"></i>Sea view</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3> $80.00<span> /PER NIGHT</span></h3>
+
+                            <div class="btn1 btn2 bt">
+                                <a href="roomView.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========   Popular Rooms part End ==========-->
+
+    <!-- ==========   About Us part Start ==========-->
+
+
+    <section id="about-full">
+        <div class="container">
+            <!--  1st row-->
+            <div class="row">
+                <!--  About Us top -->
+                <div class="section-top col-md-12">
+                    <h3 class="text-center">about us</h3>
+                    <p class="text-center">Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. <span class="d-block">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</span></p>
+                </div>
+            </div>
+            <!--  2nd row-->
+            <div class="row my-5">
+                <!--  2nd row 1st cloumn 1st-->
+                <div class="section-bottom col-md-3 col-6 text-center border-right">
+                    <div class="column1 p-3">
+                        <i class="far fa-lightbulb mb-2"></i>
+                        <h4 class="py-2">WHO WE ARE?</h4>
+                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                    </div>
+                </div>
+                <!--  2nd row 1st cloumn 2nd-->
+                <div class="section-bottom col-md-3 col-6 text-center border-right">
+                    <div class="column1 p-3">
+                        <i class="fas fa-pencil-alt mb-2"></i>
+                        <h4 class="py-2">WHAT WE CAN?</h4>
+                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                    </div>
+                </div>
+                <!--  2nd row 2nd cloumn 1st-->
+                <div class="section-bottom col-md-3 col-6 text-center border-right">
+                    <div class="column1 p-3">
+                        <i class="fas fa-cog mb-2"></i>
+                        <h4 class="py-2">WHAT WE DO?</h4>
+                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                    </div>
+                </div>
+                <!--   2nd row 2nd cloumn 2nd-->
+                <div class="section-bottom col-md-3 col-6 text-center">
+                    <div class="column1 p-3">
+                        <i class="fas fa-laptop mb-2"></i>
+                        <h4 class="py-2">WHY CHOOSE US?</h4>
+                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========   About Us part End ==========-->
+
+    <!-- ==========   Our Service part Start ==========-->
+
+    <section id="service-full">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <!--  Service top -->
+                        <div class="section-top col-md-12">
+                            <h3 class="text-center">our services</h3>
+                            <p class="text-center">Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="section-bottom col-md-6 col-6  py-4">
+                            <div class="column1">
+                                <i class="fas fa-home mb-3"></i>
+                                <h4>24 Hour Restaurant</h4>
+                                <p>onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                            </div>
+                        </div>
+
+                        <div class="section-bottom col-md-6 col-6 py-4">
+                            <div class="column1">
+                                <i class="fas fa-swimmer mb-3"></i>
+                                <h4>Swimmming Pool</h4>
+                                <p>onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                            </div>
+                        </div>
+
+                        <div class="section-bottom col-md-6 col-6  py-4">
+                            <div class="column1">
+                                <i class="fas fa-utensils mb-3"></i>
+                                <h4>Delicious Food</h4>
+                                <p>onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                            </div>
+                        </div>
+
+                        <div class="section-bottom col-md-6 col-6  py-4">
+                            <div class="column1">
+                                <i class="fas fa-hot-tub mb-3"></i>
+                                <h4>Spa Included!</h4>
+                                <p>onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========   Our Service part End ==========-->
+
+    <!-- ==========   Gallery/Protfolio Part Start ==========-->
+
+    <section id="portfolio-full" class="m-0">
+        <div class="container">
+            <div class="row">
+                <!--  protfolio top -->
+                <div class="section-top col-md-12 col-xl-12">
+                    <h3 class="text-center">Gallery</h3>
+                    <p class="text-center">Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed.</p>
+                </div>
+            </div>
+
+            <!--  1st row -->
+            <div class="row mt-5">
+                <!--  1st column -->
+                <div class="col-md-3 col-sm-6 col-12 p-3 ">
+                    <div class="venu-img">
+                        <img src="image/gallery1.jpg" class="img-fluid" alt="image alt">
+                        <div class="img-overlay">
+                            <a class="venobox" href="image/gallery1.jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--  2nd column -->
+                <div class="col-md-3 col-sm-6 col-12 p-3 ">
+                    <div class="venu-img">
+                        <img src="image/gallery2.jpg" class="img-fluid" alt="image alt">
+                        <div class="img-overlay ">
+                            <a class="venobox" href="image/gallery2.jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--  3rd column -->
+                <div class="col-md-3 col-sm-6 col-12  p-3 ">
+                    <div class="venu-img">
+                        <img src="image/gallery3.jpg" class="img-fluid" alt="image alt">
+                        <div class="img-overlay ">
+                            <a class="venobox" href="image/gallery3.jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--  4th column -->
+                <div class="col-md-3 col-sm-6 col-12  p-3  ">
+                    <div class="venu-img">
+                        <img src="image/gallery4.jpg" class="img-fluid" alt="image alt">
+                        <div class="img-overlay ">
+                            <a class="venobox" href="image/gallery4.jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  2nd row -->
+            <div class="row">
+                <!--  1st column -->
+                <div class="col-md-3 col-sm-6 col-12 p-3 ">
+                    <div class="venu-img">
+                        <img src="image/gallery5.jpg" class="img-fluid" alt="image alt">
+                        <div class="img-overlay">
+                            <a class="venobox" href="image/gallery5.jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--  2nd column -->
+                <div class="col-md-3 col-sm-6 col-12 p-3 ">
+                    <div class="venu-img">
+                        <img src="image/gallery6.jpg" class="img-fluid" alt="image alt">
+                        <div class="img-overlay ">
+                            <a class="venobox" href="image/gallery6.jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--  3rd column -->
+                <div class="col-md-3 col-sm-6 col-12  p-3 ">
+                    <div class="venu-img">
+                        <img src="image/gallery7.jpg" class="img-fluid" alt="image alt">
+                        <div class="img-overlay ">
+                            <a class="venobox" href="image/gallery7.jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--  4th column -->
+                <div class="col-md-3 col-sm-6 col-12 p-3  ">
+                    <div class="venu-img">
+                        <img src="image/gallery8.jpg" class="img-fluid" alt="image alt">
+                        <div class="img-overlay ">
+                            <a class="venobox" href="image/gallery8.jpg">
+                                <i class="fas fa-search-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========   Gallery/Protfolio Part End ==========-->
+
+    <!-- ==========   Video Part Start ==========-->
+
+    <section id="video">
+        <div class="video_bg">
+            <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=fEErySYqItI">
+                <div class="video-txt">
+                    <h3>A Five Star Hotel</h3>
+                    <h1>Enjoy With Us</h1>
+                </div>
+                <i class="fad fa-play-circle"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ==========   Video Part End ==========-->
+
+    <!-- ==========   Feedback/ What Client Say part Start  ==========-->
+
+    <div id="feedfack_full">
+        <div class="container">
+            <div class="row">
+                <div class="section-top col-md-12 mb-5">
+                    <h3 class="text-center">What Client Say</h3>
+                    <p class="text-center">Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed.</p>
+                </div>
+            </div>
+
+            <!--   Client feedback part slider -->
+
+            <div class="row">
+                <div class="col-md-12 m-auto">
+                    <div class="feedback_slide">
+                        <div class="feedk text-center">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam inventore nobis, voluptatibus ex at explicabo. Libero soluta doloribus, quisquam perspiciatis sunt quod maiores, voluptatum aliquid distinctio quia quo a, omnis dolorum blanditiis assumenda amet. Est ratione quod, maiores expedita aliquam.
+                            </p>
+                            <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            <h3>Abh Imran</h3>
+                            <h4>user</h4>
+                        </div>
+
+                        <div class="feedk text-center">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam inventore nobis, voluptatibus ex at explicabo. Libero soluta doloribus, quisquam perspiciatis sunt quod maiores, voluptatum aliquid distinctio quia quo a, omnis dolorum blanditiis assumenda amet. Est ratione quod, maiores expedita aliquam.
+                            </p>
+                            <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            <h3>Abh Imran</h3>
+                            <h4>user</h4>
+                        </div>
+
+                        <div class="feedk text-center">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam inventore nobis, voluptatibus ex at explicabo. Libero soluta doloribus, quisquam perspiciatis sunt quod maiores, voluptatum aliquid distinctio quia quo a, omnis dolorum blanditiis assumenda amet. Est ratione quod, maiores expedita aliquam.
+                            </p>
+                            <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            <h3>Abh Imran</h3>
+                            <h4>user</h4>
+                        </div>
+
+                        <div class="feedk text-center">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam inventore nobis, voluptatibus ex at explicabo. Libero soluta doloribus, quisquam perspiciatis sunt quod maiores, voluptatum aliquid distinctio quia quo a, omnis dolorum blanditiis assumenda amet. Est ratione quod, maiores expedita aliquam.
+                            </p>
+                            <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                            <h3>Abh Imran</h3>
+                            <h4>user</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--   Client photo part slider -->
+
+            <div class="row feedback">
+                <div class="col-md-12 m-auto">
+                    <div class="row clients_slider">
+
+                        <div class="col-md-12">
+                            <div class="clients">
+                                <img src="image/roundSlider.jpg" alt="client">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="clients">
+                                <img src="image/roundSlider.jpg" alt="client">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="clients">
+                                <img src="image/roundSlider.jpg" alt="client">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="clients">
+                                <img src="image/roundSlider.jpg" alt="client">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========   Feedback/ What Client Say part End  ==========-->
+
+
+    <!-- ==========   Counter Plugin Part Start   ==========-->
+
+    <section id="counting">
+        <div class="main-counter-area">
+            <div class="container">
+                <div class="row rotate">
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="count-col">
+                            <i class="fab fa-accessible-icon"></i>
+                            <h1 class="count-num">730</h1>
+                            <h3>total client</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="count-col">
+                            <i class="far fa-smile-beam"></i>
+                            <h1 class="count-num">330</h1>
+                            <h3>Satisfied</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="count-col">
+                            <i class="fas fa-search-dollar"></i>
+                            <h1 class="count-num">130</h1>
+                            <h3>Reviewed</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="count-col">
+                            <i class="far fa-heart"></i>
+                            <h1 class="count-num">430</h1>
+                            <h3>Love us</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========   Counter Plugin Part End   ==========-->
+
+
+
+    <!-- ==========  footer part start   ==========-->
+
+    <footer id="footer-full">
+        <div class="container">
+            <div class="row footer-top">
+                <div class="section-top col-md-12 mb-5">
+                    <h3 class="text-center">Contact Us</h3>
+                    <p class="text-center text-white">Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed.</p>
+                </div>
+            </div>
+            <div class="row text-white footer-middle">
+                <!--  Column1-->
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12 col-sm-6 footer-border text-center border-right">
+                    <div class="col1">
+                        <i class="far fa-map-marker-alt"></i>
+                        <p>1234, Merul Badda </p>
+                        <p>Badda, Dhaka.</p>
+                    </div>
+                </div>
+                <!--  Column2-->
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12 col-sm-6 footer-border text-center border-right">
+                    <div class="col1">
+                        <i class="fas fa-phone-alt"></i>
+
+                        <p>+123 4567 8900, +123 0098 7654 </p>
+                        <p>+99 0712 36526, +99 3644 36842</p>
+                    </div>
+                </div>
+                <!--  Column3-->
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12 col-sm-6 footer-border text-center border-right">
+                    <div class="col1">
+                        <i class="fas fa-envelope"></i>
+                        <p>abhimrann@gmail.com </p>
+                        <p>imukabbo@gmail.com</p>
+                    </div>
+                </div>
+                <!--  Column4-->
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12 col-sm-6 footer-border text-center">
+                    <div class="col1">
+                        <i class="fas fa-globe-asia"></i>
+                        <p>www.abheducation.com</p>
+                        <p>www.abhresturent.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========  copyright part start   ==========-->
+
+    <section id="footer-bttom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-sm-6 col-4 fsm1">
+                    <h5> &copy; 2019 abhimran</h5>
+                </div>
+                
+                <!--  Footer icon -->
+
+                <div class="col-xl-6 col-md-6 col-8 col-sm-6 fsm2">
+                    <i class="fab fa-facebook-f bg-primary"></i>
+                    <i class="fab fa-twitter bg-success"></i>
+                    <i class="fab fa-youtube bg-danger"></i>
+                    <i class="fab fa-pinterest-p bg-primary"></i>
+                    <i class="fab fa-google bg-info"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========  copyright part end  ==========-->
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-square-up"></i>
+    </div>
+
+    <!-- ==========  Back to top end part end  ==========-->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/fontawsome-kit.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/jquery.waypoints.js"></script>
+    <script src="js/jquery.rcounter.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
